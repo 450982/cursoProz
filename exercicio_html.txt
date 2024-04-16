@@ -1,0 +1,17 @@
+print 1
+1-> Header
+2-> main
+3-> nav
+4-> img
+5 -> button
+6-> H2 ou H3
+7-> p
+8-> a
+9-> footer
+10-> ul
+11-> li
+12-> form
+13-> label
+14 ->input
+15 ->select
+16 ->butoon
