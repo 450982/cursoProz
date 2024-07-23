@@ -1,0 +1,2 @@
+CSS Espiada
+A extensão CSS Peek é extremamente útil para desenvolvedores que trabalham com CSS e SCSS (Sass), permitindo que os usuários visualizem definições de CSS diretamente do HTML ou código JavaScript/TypeScript. Isso facilita a navegação para o arquivo CSS ou SCSS associado onde uma classe ou ID específico é definido, sem sair do arquivo atual. Essa funcionalidade melhorou significativamente a compreensão do código e a eficiência ao trabalhar com estilos e desenvolvimento front-end dentro do Visual Studio Code
