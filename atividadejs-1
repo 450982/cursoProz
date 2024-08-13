@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Exemplo</title>
+</head>
+<body>
+    <h1 id="titulo"></h1>
+    <ul></ul>
+    <a href="https://prozeducacao.com.br"></a>
+    <ol id="lista-ordenada"></ol>
+
+    <!-- Conexão com o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+script.js   //Este arquivo será responsável por capturar os elementos criados no HTML e adicionar conteúdo a eles conforme solicitado.
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Capturando o elemento h1 e adicionando texto
+    var titulo = document.getElementById('titulo');
+    titulo.innerText = 'Título da Página';
+
+    // Adicionando texto à tag 'a'
+    var link = document.querySelector('a[href="https://prozeducacao.com.br"]');
+    link.innerText = 'Acesse Proz Educação';
+
+    // Adicionando itens à lista não ordenada (ul)
+    var ul = document.querySelector('ul');
+    ul.innerHTML += '<li>Item 1</li>';
+    ul.innerHTML += '<li>Item 2</li>';
+    ul.innerHTML += '<li>Item 3</li>';
+
+    // Adicionando itens com links à lista ordenada (ol)
+    var ol = document.getElementById('lista-ordenada');
+    ol.innerHTML += '<li><a href="https://exemplo.com">Item A</a></li>';
+    ol.innerHTML += '<li><a href="https://outroexemplo.com">Item B</a></li>';
+    ol.innerHTML += '<li><a href="https://maisumexemplo.com">Item C</a></li>';
+});
+
