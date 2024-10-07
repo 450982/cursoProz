@@ -11,3 +11,38 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Método simples de criação de elementos
+    const produtoSimples = document.createElement('div');
+    produtoSimples.className = 'produto';
+    produtoSimples.innerHTML = `
+        <h2>Produto 1</h2>
+        <p>Descrição do produto 1</p>
+        <strong>R$ 99,90</strong>
+    `;
+    
+    document.body.appendChild(produtoSimples);
+
+    // Método complexo de criação de elementos
+    const produtoComplexo = document.createElement('div');
+    produtoComplexo.className = 'produto';
+    produtoComplexo.innerHTML = `
+        <h2>Produto 2</h2>
+        <p>
+            Este é um produto mais detalhado com uma descrição mais longa e 
+            informações adicionais sobre suas características e benefícios.
+        </p>
+        <ul>
+            <li><strong>Preço:</strong> R$ 199,00</li>
+            <li><strong>Disponibilidade:</strong> Em estoque</li>
+            <li><strong>Cor:</strong> Azul ou Vermelho</li>
+        </ul>
+        <button class="comprar">Comprar</button>
+    `;
+    
+    document.body.appendChild(produtoComplexo);
+});
